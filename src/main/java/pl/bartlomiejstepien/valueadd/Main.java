@@ -22,6 +22,9 @@ public class Main {
 
     private static Map<String, List<Integer>> getWordOccurrencesInFile(final Path path)
     {
+        if (path == null)
+            throw new IllegalArgumentException("File path cannot be null!");
+
         final Map<String, List<Integer>> wordLinesOccurrence = new TreeMap<>();
 
         try
