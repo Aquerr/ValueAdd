@@ -1,0 +1,11 @@
+# Class files
+*.class
+
+# Package files
+*.jar
+
+/target
+/build
+
+# IDEA
+.idea
